@@ -25,9 +25,23 @@
       
       <div class="search-container">
         <div class="search-box">
-          <input type="text" placeholder="세계관 용어를 검색해보세요 (예: 개도회, 앵주)">
-          <button type="button">검색</button>
+          <input type="text" id="search-input" placeholder="세계관 용어를 검색해보세요 (예: 개도회, 앵주)">
+          <button type="button" id="search-btn">검색</button>
         </div>
+      </div>
+
+      <div class="realm-guide">
+        <h3>무협 경지 안내 (武俠 境地)</h3>
+        <ul class="realm-list">
+          <li><strong>삼류 (三流) :</strong> 기운을 느끼기 시작하며, 일반인 서너 명을 상대할 수 있는 풋내기 무인</li>
+          <li><strong>이류 (二流) :</strong> 기운을 무기에 담아낼 줄 알며, 어엿한 무인으로 인정받는 수준</li>
+          <li><strong>일류 (一流) :</strong> 검기(劍氣)를 다루며 바위를 단숨에 부수는 수준의 고수</li>
+          <li><strong>절정 (絶頂) :</strong> 검강(劍罡)을 두르고 수십 명의 무인을 홀로 상대하는 일당백의 경지</li>
+          <li><strong>초절정 (超絶頂) :</strong> 기운을 자유자재로 형상화하며, 일격에 성벽을 무너뜨리는 탈인간의 경지</li>
+          <li><strong>화경 (化境) :</strong> 자연과 동화되어 기운만으로 산을 가르고 강을 멈추는 신화적 경지 (반보화경: 화경에 반 걸음 걸친 상태)</li>
+          <li><strong>현경 (玄境) :</strong> 무(武)의 이치를 깨달아 형태에 얽매이지 않고 만물을 무기로 삼는 전설의 경지</li>
+          <li><strong>생사경 (生死境) :</strong> 삶과 죽음의 경계를 넘어 불로불사(不老不死)에 가까워진 신(神)의 영역</li>
+        </ul>
       </div>
     </section>
   </main>
@@ -54,6 +68,15 @@
       <span class="hangul">인물</span>
     </a>
   </nav>
+
+  <!-- Search Modal -->
+  <div id="search-modal" class="modal-overlay hidden">
+    <div class="modal-content">
+      <h3 id="modal-title">검색 결과</h3>
+      <p id="modal-body">내용</p>
+      <button id="modal-close" class="btn-primary">닫기</button>
+    </div>
+  </div>
 
   <script src="/script.js"></script>
 </body>

@@ -225,6 +225,47 @@ footer {
   background-color: #600000;
 }
 
+.realm-guide {
+  margin-top: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  border: 1px solid var(--point-sub);
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+.realm-guide h3 {
+  color: var(--point-main);
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  border-bottom: 1px dashed var(--point-sub);
+  padding-bottom: 0.5rem;
+}
+
+.realm-list {
+  list-style: none;
+  padding: 0;
+}
+
+.realm-list li {
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+  color: #444;
+  word-break: keep-all;
+  line-height: 1.5;
+}
+
+.realm-list strong {
+  color: var(--point-main);
+  display: inline-block;
+  min-width: 100px;
+}
+
 /* World Page & Background Page */
 .section-title {
   color: var(--point-main);
@@ -273,6 +314,14 @@ footer {
   left: 0;
   top: 0;
   font-weight: bold;
+}
+
+.subject-list {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
 }
 
 .info-list strong {
@@ -351,6 +400,52 @@ img.char-img {
 .char-details strong {
   color: var(--point-main);
   margin-right: 0.3rem;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.modal-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-content {
+  background: var(--bg-color);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  max-width: 90%;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  border: 1px solid var(--point-sub);
+  position: relative;
+}
+
+.modal-content h3 {
+  color: var(--point-main);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.modal-content p {
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  word-break: keep-all;
 }
 
 /* Mobile Responsive */
