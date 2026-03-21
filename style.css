@@ -240,11 +240,94 @@ footer {
 
 .realm-guide h3 {
   color: var(--point-main);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   text-align: center;
-  font-size: 1.2rem;
-  border-bottom: 1px dashed var(--point-sub);
+  font-size: 1.5rem;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.realm-subtitle {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.tier-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tier-card {
+  background-color: #fff;
+  border: 1px solid var(--point-sub);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tier-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(139, 0, 0, 0.08);
+  border-color: var(--point-main);
+}
+
+.tier-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--bg-color);
   padding-bottom: 0.5rem;
+}
+
+.tier-icon {
+  font-size: 1.5rem;
+}
+
+.tier-name {
+  font-size: 1.3rem;
+  color: var(--point-main);
+  font-weight: 700;
+}
+
+.tier-translations {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: var(--bg-color);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.trans-item {
+  font-size: 0.95rem;
+  color: #333;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.trans-label {
+  background-color: var(--point-main);
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.tier-desc {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+  word-break: keep-all;
 }
 
 .realm-list {
