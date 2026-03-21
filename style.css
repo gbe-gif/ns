@@ -533,6 +533,10 @@ img.char-img {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
+  main {
+    padding: 2rem 1rem;
+  }
+
   .hero h1 {
     font-size: 1.8rem;
   }
@@ -543,5 +547,23 @@ img.char-img {
 
   .grid-container {
     grid-template-columns: 1fr;
+  }
+
+  .realm-guide {
+    padding: 1.5rem 0.8rem;
+    border-radius: 8px;
+  }
+
+  .tier-card {
+    padding: 1.2rem 1rem;
+  }
+
+  .tier-translations {
+    padding: 0.8rem;
+  }
+
+  .trans-item {
+    flex-direction: column;
+    gap: 0.3rem;
   }
 }
